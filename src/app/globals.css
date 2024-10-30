@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: linear-gradient(#c8dce5, #b6ccda);
+  --foreground: #ffffff;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  max-width: 1200px;
+  margin-inline: auto;
+
+  > * {
+    margin-inline: 1rem;
+  }
+}
+
+.active {
+  color: #b6ccda;
+  background: var(--foreground);
+}
